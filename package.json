@@ -1,0 +1,24 @@
+{
+  "name": "flashbot-transaction",
+  "version": "1.0.0",
+  "description": "inspired by https://github.com/flashbots/searcher-minter/blob/main/src/index.ts",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx prettier --write ./src/index.ts && ts-node ./src/index.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "prettier": "2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^11.0.0",
+    "ethers": "^5.5.3"
+  }
+}
