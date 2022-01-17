@@ -32,7 +32,7 @@ async function checkBalance() {
       let balance = await getBalance()
       console.log('RBIS: ' + balance)
 
-      if (balance == 0) {
+      if (balance > 0) {
         // Send to Discord
         await sendDiscord('LETS GO! RBIS:' + balance.toString())
         process.exit(0)
