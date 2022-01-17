@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx prettier --write ./src/index.ts && ts-node ./src/index.ts",
+    "build": "tsc -p .",
     "lint": "eslint . --ext .ts"
   },
   "keywords": [],
